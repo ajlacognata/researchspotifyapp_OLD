@@ -145,7 +145,7 @@ app.get('/callback', function(req, res) {
    }, function(err) {
      console.log('Something went wrong!', err);
    });
-   setTimeout(function(){res.redirect('https://researchspotifyapp-27t5c.ondigitalocean.app/callback.html');}, 1500) 
+   //setTimeout(function(){res.redirect('https://researchspotifyapp-27t5c.ondigitalocean.app/callback.html');}, 1500) 
     });
   }
 });
