@@ -15,7 +15,7 @@
 			  text-align: center;
 		  }
 		  .btn-primary {
-			  background-color: #1DB954;
+			  background-color: #0478bf;
 			  font-size: 20px;
 		  }
 		  .consent {
@@ -44,10 +44,42 @@
 			  margin-left: 2%;
 			  margin-right: 2%;
 		  }
+		  .iframeAttributes {
+   			  border: 0px;
+			  font-weight: bold;
+			  height: 50px;
+		  }
+		  .iframeDiv {
+			  margin-left: 43%;
+			  text-align: center;
+			  font-weight: bold;
+		  }
+		  .george {
+			 font-weight: bold;
+		  }
 	  </style>
+	
+	<script>
+function readfile() {
+    alert(document.getElementById('counter.txt').contentDocument.body.firstChild.innerHTML);
+}
+</script>
+	
 </head>
 
 <body>
-	<div class="consent"><h1>TEST</h1></div>
+	<div class="consent">
+	  <h1>Success!</h1>
+		<h3 class="george">Please continue to the survey, but first, please remember the following number</h3>
+		<div class="seperator"></div>
+		<div class="iframeDiv"><iframe class="iframeAttributes" src ="counter.txt" onload="readfile()"></iframe></div>
+		<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=-f2oEP_CDU6cGR_iwYgWSsUJgLtY3U1BrojaMdGuC6lUNDJQRUFRNjYxMDA2TVNIVjI5NVpQS0QzRC4u" class="btn btn-primary">Enter Survey</a>
+		<div class="seperator"></div>
+		<div class="seperator"></div>
+		<div class="seperator"></div>
+		<div class="seperator"></div>
+		
+	</div>
+	
 </body>
 </html>
