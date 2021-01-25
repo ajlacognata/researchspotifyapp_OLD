@@ -141,6 +141,7 @@ app.get('/callback', function(req, res) {
      fs.writeFile('./public/counter.txt', counter, function (err) {
       if (err) throw err;
       console.log('Counter saved: ' +counter);
+      setTimeout(3000);
      }); 
    }, function(err) {
      console.log('Something went wrong!', err);
