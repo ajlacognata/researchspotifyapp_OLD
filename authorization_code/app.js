@@ -21,7 +21,7 @@ var spotifyApi = new SpotifyWebApi({
 
 var client_id = '78e6c06078b64ca6a10035adea9995ce'; // Your client id
 var client_secret = '0ca99a1d41954a9ebe812efdaab20956'; // Your secret
-var redirect_uri = 'https://researchspotifyapp-27t5c.ondigitalocean.app//callback.html'; // Your redirect uri
+var redirect_uri = 'https://researchspotifyapp-27t5c.ondigitalocean.app/callback.html'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -145,7 +145,7 @@ app.get('/callback', function(req, res) {
    }, function(err) {
      console.log('Something went wrong!', err);
    });
-   setTimeout(function(){res.redirect('https://researchspotifyapp-27t5c.ondigitalocean.app//callback.html');}, 1500) 
+   setTimeout(function(){res.redirect('https://researchspotifyapp-27t5c.ondigitalocean.app/callback.html');}, 1500) 
     });
   }
 });
